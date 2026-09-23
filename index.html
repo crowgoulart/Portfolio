@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Leandro Goulart - Sistemas de Informação, UX/UI e Design Digital." />
+  <title>Leandro Goulart | Sistemas de Informação, UX/UI & Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio">LG</a>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#sistemas">Sistemas</a>
+        <a href="#uxui">UX/UI</a>
+        <a href="#design">Design</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">SISTEMAS DE INFORMAÇÃO • UX/UI • DESIGN DIGITAL</p>
+          <h1>Leandro Goulart</h1>
+          <p class="hero-text">Designer com experiência profissional em comunicação visual e produção digital, formado em Sistemas de Informação e desenvolvendo novos projetos em tecnologia, banco de dados e UX/UI.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#areas">Escolher área</a>
+            <a class="btn secondary" href="https://www.behance.net/leandrogoulart1" target="_blank" rel="noreferrer">Behance</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <span class="status">Disponível para oportunidades</span>
+          <h2>Meu próximo passo</h2>
+          <p>Aplicar minha formação em Sistemas de Informação em projetos reais, ampliar minha experiência técnica e conectar tecnologia, organização de dados e experiência do usuário à minha base profissional em design.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="areas" class="section area-selector-section">
+      <div class="container">
+        <div class="area-selector-head">
+          <div>
+            <p class="section-label">ESCOLHA O QUE QUER EXPLORAR</p>
+            <h2 class="section-title">Vá direto para a área mais relevante para a oportunidade</h2>
+          </div>
+          <p>O portfólio está organizado por área de atuação para facilitar uma análise rápida por recrutadores e entrevistadores.</p>
+        </div>
+
+        <div class="area-selector-grid">
+          <a class="area-choice systems-choice" href="#sistemas" aria-label="Ir para projetos de Sistemas de Informação">
+            <span class="area-choice-index">01</span>
+            <span class="area-choice-kicker">TECNOLOGIA</span>
+            <strong>Sistemas de Informação</strong>
+            <p>Banco de dados, SQL, modelagem, dashboards, lógica e protótipos funcionais.</p>
+            <span class="area-choice-link">Ver projetos técnicos →</span>
+          </a>
+
+          <a class="area-choice ux-choice" href="#uxui" aria-label="Ir para projetos de UX e UI">
+            <span class="area-choice-index">02</span>
+            <span class="area-choice-kicker">PRODUTO DIGITAL</span>
+            <strong>UX/UI Design</strong>
+            <p>Pesquisa, identificação de problemas, fluxos, wireframes, interfaces e protótipos.</p>
+            <span class="area-choice-link">Ver estudos de UX/UI →</span>
+          </a>
+
+          <a class="area-choice design-choice" href="#design" aria-label="Ir para projetos profissionais de Design">
+            <span class="area-choice-index">03</span>
+            <span class="area-choice-kicker">EXPERIÊNCIA PROFISSIONAL</span>
+            <strong>Design & Conteúdo</strong>
+            <p>Social media, ilustração, animação 2D, edição de vídeo, mangá e projetos para clientes.</p>
+            <span class="area-choice-link">Ver trabalhos de design →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="section-label">SOBRE MIM</p>
+          <h2>Experiência criativa com evolução para tecnologia</h2>
+        </div>
+        <div class="body-copy">
+          <p>Atuo de forma autônoma com design para redes sociais, edição de vídeo, ilustração, animação 2D e produção de materiais digitais. Ao longo da carreira também desenvolvi identidades visuais, peças institucionais, diagramação e conteúdo para diferentes públicos.</p>
+          <p>Sou formado em Sistemas de Informação pela Universidade Veiga de Almeida e atualmente estudo UX/UI Design. Meu objetivo é demonstrar, por meio deste portfólio, tanto a experiência profissional que já possuo quanto minha capacidade de desenvolver soluções técnicas e produtos digitais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sistemas" class="section muted">
+      <div class="container">
+        <p class="section-label">SISTEMAS DE INFORMAÇÃO</p>
+        <h2 class="section-title">Projetos técnicos para demonstrar lógica, dados e desenvolvimento</h2>
+        <p class="section-intro">Projetos de estudo e demonstração criados para aplicar conhecimentos de modelagem de dados, SQL, desenvolvimento web e organização de informações.</p>
+
+        <div class="projects-grid">
+          <article class="project-card featured tech-card">
+            <div class="project-number">01</div>
+            <p class="project-type">BANCO DE DADOS • PROJETO DE ESTUDO</p>
+            <h3>Sistema de Gestão para Freelancers</h3>
+            <p>Modelagem de um sistema para organizar clientes, projetos, serviços, prazos e pagamentos de profissionais autônomos.</p>
+            <div class="tags"><span>SQL</span><span>Modelagem</span><span>MySQL / PostgreSQL</span><span>CRUD</span></div>
+
+            <div class="data-model">
+              <div class="entity"><strong>CLIENTES</strong><span>id_cliente</span><span>nome</span><span>email</span><span>telefone</span></div>
+              <div class="relation">1 → N</div>
+              <div class="entity"><strong>PROJETOS</strong><span>id_projeto</span><span>id_cliente</span><span>prazo</span><span>status</span><span>valor</span></div>
+              <div class="relation">1 → N</div>
+              <div class="entity"><strong>PAGAMENTOS</strong><span>id_pagamento</span><span>id_projeto</span><span>valor</span><span>status</span></div>
+            </div>
+
+            <div class="case-steps four">
+              <div><strong>Problema</strong><p>Informações de clientes, trabalhos e pagamentos ficam dispersas em diferentes ferramentas.</p></div>
+              <div><strong>Modelagem</strong><p>Definição das entidades, relacionamentos, chaves e regras necessárias ao sistema.</p></div>
+              <div><strong>Consultas</strong><p>Projetos ativos, pagamentos pendentes, faturamento mensal e clientes recorrentes.</p></div>
+              <div><strong>Evolução</strong><p>Transformar o banco de dados em uma aplicação web funcional.</p></div>
+            </div>
+
+            <div class="dev-proof">
+              <div class="dev-proof-head">
+                <div>
+                  <span class="proof-badge">DEMONSTRAÇÃO TÉCNICA</span>
+                  <h4>Modelagem e consultas SQL</h4>
+                  <p>Trechos de implementação usados para demonstrar como o projeto sairia da modelagem e chegaria às consultas do sistema.</p>
+                </div>
+                <div class="code-tabs" data-tabs="db-code">
+                  <button class="code-tab active" data-target="sql-schema">Schema</button>
+                  <button class="code-tab" data-target="sql-query">Consulta</button>
+                  <button class="code-tab" data-target="sql-result">Resultado</button>
+                </div>
+              </div>
+
+              <div class="code-panel active" id="sql-schema" data-group="db-code">
+<pre><code>CREATE TABLE clientes (
+  id_cliente INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(120) NOT NULL,
+  email VARCHAR(150) UNIQUE
+);
+
+CREATE TABLE projetos (
+  id_projeto INT PRIMARY KEY AUTO_INCREMENT,
+  id_cliente INT NOT NULL,
+  titulo VARCHAR(150) NOT NULL,
+  prazo DATE,
+  status VARCHAR(30),
+  valor DECIMAL(10,2),
+  FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente)
+);</code></pre>
+              </div>
+
+              <div class="code-panel" id="sql-query" data-group="db-code">
+<pre><code>SELECT
+  c.nome AS cliente,
+  p.titulo AS projeto,
+  p.prazo,
+  p.valor
+FROM projetos p
+JOIN clientes c ON c.id_cliente = p.id_cliente
+WHERE p.status = 'Em andamento'
+ORDER BY p.prazo ASC;</code></pre>
+              </div>
+
+              <div class="code-panel" id="sql-result" data-group="db-code">
+                <div class="query-result">
+                  <div class="query-row query-head"><span>Cliente</span><span>Projeto</span><span>Prazo</span><span>Valor</span></div>
+                  <div class="query-row"><span>Studio Norte</span><span>Site institucional</span><span>24/09/2026</span><span>R$ 2.400</span></div>
+                  <div class="query-row"><span>Solar Mais</span><span>Campanha digital</span><span>30/09/2026</span><span>R$ 1.850</span></div>
+                  <div class="query-row"><span>Clínica Alfa</span><span>Identidade visual</span><span>08/10/2026</span><span>R$ 3.200</span></div>
+                </div>
+              </div>
+              <p class="demo-disclaimer">Demonstração com dados fictícios. A estrutura SQL e as consultas fazem parte do projeto técnico apresentado no portfólio.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <p class="project-type">ANÁLISE DE DADOS • DEMONSTRAÇÃO FUNCIONAL</p>
+            <h3>Dashboard de Projetos e Faturamento</h3>
+            <p>Painel demonstrativo para transformar dados de projetos, clientes e pagamentos em informações úteis para tomada de decisão.</p>
+            <div class="tags"><span>JavaScript</span><span>Dashboard</span><span>Indicadores</span><span>Dados</span></div>
+            <div class="dashboard-filter">
+              <label for="periodoDashboard">Período</label>
+              <select id="periodoDashboard">
+                <option value="set">Setembro</option>
+                <option value="ago">Agosto</option>
+                <option value="jul">Julho</option>
+              </select>
+            </div>
+            <div class="mini-dashboard">
+              <div><span>Projetos ativos</span><strong id="dashProjetos">12</strong></div>
+              <div><span>Receita mensal</span><strong id="dashReceita">R$ 8,4 mil</strong></div>
+              <div><span>Pendências</span><strong id="dashPendencias">3</strong></div>
+            </div>
+            <details class="code-details">
+              <summary>Ver programação desta demonstração</summary>
+<pre><code>const dados = {
+  set: { projetos: 12, receita: 'R$ 8,4 mil', pendencias: 3 },
+  ago: { projetos: 9, receita: 'R$ 6,9 mil', pendencias: 2 },
+  jul: { projetos: 7, receita: 'R$ 5,7 mil', pendencias: 4 }
+};
+
+periodoDashboard.addEventListener('change', atualizarDashboard);</code></pre>
+            </details>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <p class="project-type">APLICAÇÃO WEB • PROTÓTIPO FUNCIONAL</p>
+            <h3>Interface do Sistema de Gestão</h3>
+            <p>Protótipo navegável para demonstrar cadastro e atualização de projetos diretamente no portfólio.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>CRUD</span></div>
+            <div class="mini-app">
+              <div class="mini-app-toolbar">
+                <strong>Projetos</strong>
+                <button id="addDemoProject" type="button">+ Novo projeto</button>
+              </div>
+              <div id="demoProjectList" class="demo-project-list">
+                <div class="demo-project"><span><strong>Landing page</strong><small>Studio Norte</small></span><em>Em andamento</em></div>
+                <div class="demo-project"><span><strong>Dashboard interno</strong><small>Empresa Beta</small></span><em>Planejamento</em></div>
+              </div>
+            </div>
+            <details class="code-details">
+              <summary>Ver código usado no protótipo</summary>
+<pre><code>function adicionarProjeto() {
+  const projeto = document.createElement('div');
+  projeto.className = 'demo-project';
+  projeto.innerHTML = `&lt;span&gt;&lt;strong&gt;Novo projeto&lt;/strong&gt;
+    &lt;small&gt;Cliente demonstrativo&lt;/small&gt;&lt;/span&gt;
+    &lt;em&gt;Novo&lt;/em&gt;`;
+  lista.prepend(projeto);
+}</code></pre>
+            </details>
+            <p class="project-note">É uma demonstração front-end com dados fictícios; a próxima evolução é conectar esta interface ao banco relacional apresentado acima.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="uxui" class="section">
+      <div class="container">
+        <p class="section-label">UX/UI DESIGN</p>
+        <h2 class="section-title">Do problema observado à proposta de solução</h2>
+        <p class="section-intro">Minha área de estudo atual. Aqui o foco não é apenas criar telas, mas demonstrar pesquisa, raciocínio, tomada de decisão e evolução da solução.</p>
+
+        <article class="ux-case">
+          <div class="ux-case-head">
+            <div>
+              <span class="case-badge">CASE PRINCIPAL</span>
+              <p class="project-type">UX RESEARCH • UX/UI • ESTUDO DE CASO</p>
+              <h3>Redescoberta de ofertas em aplicativo de delivery</h3>
+              <p>Estudo sobre a dificuldade de recuperar uma promoção após o usuário continuar comparando restaurantes e preços.</p>
+            </div>
+            <div class="case-summary">
+              <span>Objetivo</span>
+              <strong>Facilitar o retorno a ofertas já visualizadas sem interromper a comparação.</strong>
+            </div>
+          </div>
+
+          <div class="ux-process">
+            <div class="process-step"><span>01</span><strong>Observação</strong><p>A promoção vista anteriormente pode desaparecer durante a navegação.</p></div>
+            <div class="process-step"><span>02</span><strong>Entrevistas</strong><p>Perguntas sobre escolhas, promoções, comparação de preços e comportamento após encontrar uma oferta.</p></div>
+            <div class="process-step"><span>03</span><strong>Padrões</strong><p>Usuários continuam comparando preços mesmo depois de encontrar uma oferta interessante.</p></div>
+            <div class="process-step"><span>04</span><strong>Insight</strong><p>Existe necessidade de recuperar facilmente uma opção vista antes da comparação.</p></div>
+            <div class="process-step"><span>05</span><strong>Hipótese</strong><p>Registrar ofertas visualizadas pode reduzir a frustração e melhorar a tomada de decisão.</p></div>
+            <div class="process-step"><span>06</span><strong>Próxima fase</strong><p>Fluxo, wireframes, protótipo e testes para validar a solução.</p></div>
+          </div>
+
+          <div class="how-might-we">
+            <span>COMO PODERÍAMOS...</span>
+            <p>Permitir que o usuário continue comparando restaurantes sem perder uma oferta que despertou seu interesse?</p>
+          </div>
+
+          <div class="solution-grid">
+            <div><span>Exploração 01</span><strong>Vistos recentemente</strong><p>Lista automática de ofertas e restaurantes acessados.</p></div>
+            <div><span>Exploração 02</span><strong>Salvar para comparar</strong><p>Ação rápida para guardar opções temporariamente.</p></div>
+            <div><span>Exploração 03</span><strong>Última promoção</strong><p>Atalho para retornar à oferta visualizada anteriormente.</p></div>
+          </div>
+        </article>
+
+        <div class="lab-heading">
+          <div><p class="section-label">INTERFACE LAB</p><h3>Aplicações conceituais para praticar UI</h3></div>
+          <p>Pequenos projetos de demonstração para praticar hierarquia visual, componentes, fluxos e interação.</p>
+        </div>
+
+        <div class="projects-grid lab-grid">
+          <article class="project-card"><p class="project-type">PROJETO CONCEITUAL</p><h3>Dashboard Financeiro</h3><p>Interface para indicadores, gráficos, filtros e acompanhamento de informações.</p><div class="tags"><span>Dashboard</span><span>UI</span><span>Dados</span></div></article>
+          <article class="project-card"><p class="project-type">PROJETO CONCEITUAL</p><h3>Task Manager</h3><p>Aplicação simples para criar, organizar e concluir tarefas com estados claros de interação.</p><div class="tags"><span>UI</span><span>Componentes</span><span>JavaScript</span></div></article>
+          <article class="project-card"><p class="project-type">PROJETO CONCEITUAL</p><h3>Sistema de Agendamento</h3><p>Fluxo de escolha de serviço, data, horário e confirmação com foco em clareza e redução de erros.</p><div class="tags"><span>Fluxo</span><span>Formulários</span><span>UX/UI</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="section muted">
+      <div class="container">
+        <p class="section-label">DESIGN & PROJETOS PROFISSIONAIS</p>
+        <h2 class="section-title">Experiência aplicada em projetos reais</h2>
+
+        <article class="tdc-card">
+          <div class="tdc-copy">
+            <p class="project-type">PROJETO PROFISSIONAL • CLIENTE</p>
+            <h3>Turma Durma Cedo</h3>
+            <p>Projeto educativo voltado ao público jovem e escolar, utilizando entretenimento e comunicação visual para transmitir uma mensagem positiva.</p>
+            <p>O universo do projeto envolve <strong>quadrinhos/mangá, jogos, animação e conteúdo para redes sociais</strong>. Minha atuação está concentrada na produção visual e digital do projeto.</p>
+            <div class="tags"><span>Ilustração</span><span>Mangá</span><span>Animação 2D</span><span>Edição de Vídeo</span><span>Social Media</span><span>Reels</span></div>
+            <a class="btn primary small" href="https://www.behance.net/leandrogoulart1" target="_blank" rel="noreferrer">Ver trabalhos no Behance</a>
+          </div>
+          <div class="tdc-services">
+            <div><span>01</span><strong>Ilustração</strong><p>Personagens, cenários e materiais visuais para o universo do projeto.</p></div>
+            <div><span>02</span><strong>Quadrinhos / Mangá</strong><p>Produção visual e apoio à composição das páginas e materiais relacionados.</p></div>
+            <div><span>03</span><strong>Vídeo & Animação</strong><p>Edição de vídeos e produção de animações 2D para conteúdos digitais.</p></div>
+            <div><span>04</span><strong>Redes Sociais</strong><p>Criação de posts, feed, carrosséis e Reels para Instagram.</p></div>
+            <div><span>05</span><strong>Jogos</strong><p>Desenvolvimento de elementos gráficos e materiais visuais ligados aos jogos do projeto.</p></div>
+          </div>
+        </article>
+
+        <div class="client-work">
+          <div class="client-work-head">
+            <div>
+              <p class="section-label">TRABALHOS PUBLICADOS</p>
+              <h3>Clientes com trabalhos meus no Instagram</h3>
+            </div>
+            <p>Perfis profissionais onde é possível visualizar peças de social media, identidade visual e conteúdos digitais produzidos no meu trabalho como designer.</p>
+          </div>
+          <div class="client-links-grid">
+            <a class="client-link-card" href="https://www.instagram.com/sollagos.energiasolar?stkn=MTBrcnIwbnFnczlhcA==" target="_blank" rel="noreferrer">
+              <span class="client-link-type">ENERGIA SOLAR • SOCIAL MEDIA</span>
+              <strong>Sollagos Energia Solar</strong>
+              <p>Conteúdo para redes sociais, peças de feed, Reels e comunicação visual.</p>
+              <span class="client-link-action">Ver trabalhos no Instagram →</span>
+            </a>
+            <a class="client-link-card" href="https://www.instagram.com/leonoragoulart.adv?stkn=NGpkYnhrMTgzbzVn" target="_blank" rel="noreferrer">
+              <span class="client-link-type">ADVOCACIA • CONTEÚDO DIGITAL</span>
+              <strong>Leonora Goulart Advogada</strong>
+              <p>Criação visual e conteúdo digital para comunicação profissional nas redes sociais.</p>
+              <span class="client-link-action">Ver trabalhos no Instagram →</span>
+            </a>
+            <a class="client-link-card" href="https://www.instagram.com/linharesegoulart?stkn=MTRmM2gya29nZ2k0dA==" target="_blank" rel="noreferrer">
+              <span class="client-link-type">ADVOCACIA • SOCIAL MEDIA</span>
+              <strong>Linhares &amp; Goulart Advogadas Associadas</strong>
+              <p>Design para redes sociais, campanhas visuais, feed e conteúdos em vídeo.</p>
+              <span class="client-link-action">Ver trabalhos no Instagram →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="competencias" class="section">
+      <div class="container">
+        <p class="section-label">COMPETÊNCIAS</p>
+        <h2 class="section-title">O que já faço e o que estou desenvolvendo</h2>
+        <div class="skills-grid">
+          <div class="skill-block"><h3>Design & Conteúdo</h3><p>Photoshop, Illustrator, InDesign, CorelDRAW, design para redes sociais, identidade visual, diagramação e ilustração.</p></div>
+          <div class="skill-block"><h3>Audiovisual</h3><p>Edição de vídeo, conteúdo para Reels e animação 2D.</p></div>
+          <div class="skill-block"><h3>UX/UI</h3><p>Pesquisa com usuários, identificação de padrões, definição de problemas, fluxos, wireframes e prototipação em desenvolvimento.</p></div>
+          <div class="skill-block"><h3>Sistemas & Dados</h3><p>Formação em Sistemas de Informação, modelagem de banco de dados, SQL e desenvolvimento web em evolução por meio de projetos práticos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience muted">
+      <div class="container">
+        <p class="section-label">EXPERIÊNCIA</p>
+        <div class="timeline">
+          <div class="timeline-item"><span>2018 - atual</span><div><h3>Designer Autônomo</h3><p>Design para redes sociais, edição de vídeo, ilustração, animação 2D, identidade visual, materiais digitais e atendimento a clientes.</p></div></div>
+          <div class="timeline-item"><span>2015 - 2018</span><div><h3>OnIdeia Agência de Design</h3><p>Identidade visual, animações para publicidade, diagramação, peças para mídias sociais e web design.</p></div></div>
+          <div class="timeline-item"><span>2012 - 2015</span><div><h3>Polícia Civil do Estado do Rio de Janeiro</h3><p>Identidade visual, campanhas institucionais, apresentações, materiais informativos e projetos gráficos.</p></div></div>
+          <div class="timeline-item"><span>2011</span><div><h3>DETRAN - Educação para o Trânsito</h3><p>Campanhas educativas, animações e revista infantil sobre educação no trânsito.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact-section">
+      <div class="container contact-card">
+        <div>
+          <p class="section-label">CONTATO</p>
+          <h2>Vamos conversar?</h2>
+          <p>Estou em busca de oportunidades para desenvolver minha experiência em tecnologia, Sistemas de Informação e UX/UI, sem deixar de aproveitar minha bagagem profissional em design.</p>
+        </div>
+        <div class="contact-links">
+          <a href="tel:+5521979998722">(21) 97999-8722</a>
+          <a class="whatsapp-link" href="https://wa.me/5521979998722" target="_blank" rel="noreferrer" aria-label="Conversar com Leandro pelo WhatsApp">WhatsApp →</a>
+          <a href="mailto:leandro.crowgoulart@gmail.com">leandro.crowgoulart@gmail.com</a>
+          <a href="https://www.behance.net/leandrogoulart1" target="_blank" rel="noreferrer">Behance</a>
+          <a href="https://www.linkedin.com/in/leandrogoulart-34365447" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© <span id="year"></span> Leandro Goulart. Portfólio profissional.</p></div></footer>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo" title="Voltar ao topo">↑<span>Topo</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
